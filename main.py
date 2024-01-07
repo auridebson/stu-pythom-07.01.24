@@ -52,9 +52,25 @@ paises_africanos = {
     'Zimbábue': 'Harare'
 }
 
+frutas_tropicais = [
+    'Abacaxi',
+    'Manga',
+    'Goiaba',
+    'Banana',
+    'Coco',
+    'Maracujá',
+    'Caju',
+    'Abacate',
+    'Pitaya',
+    'Graviola',
+    'Kiwi',
+    'Papaya',
+    'Jabuticaba',
+    'Lichia',
+    'Rambutã'
+]
 
-frutas = ["maça",[]]
-
+frutas = ["Maça","Limão","Pera",]
 
 def ln(x):
     print("-"*30)
@@ -62,12 +78,15 @@ def ln(x):
 print("Programa para estudar listas")
 ln(45)
 
-
 # for indice, pais in enumerate(paises_africanos): 
 #     print(f"""País: {pais}\nCapital: {paises_africanos[pais]}""")
 #     ln(30) 
 
-for i in range(3):
-    fruta = str(input("Digite uma fruta"))
-    frutas[1].append(fruta)
-print(frutas)
+while True:
+    for item, fruta in enumerate(frutas_tropicais):
+        print(f"""{item+1}º - {fruta}""")
+    escolha = int(input("Qual a fruta que você quer deletar? "))
+    if escolha == 100:
+        break
+    frutas_tropicais.pop(escolha-1)
+
