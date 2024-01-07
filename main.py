@@ -1,5 +1,6 @@
 from dados import *
 
+# o mistério das duas irmãs
 
 # BLOCO DE FUNÇÕES
 def ln(x):
