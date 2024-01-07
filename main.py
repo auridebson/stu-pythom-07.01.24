@@ -53,7 +53,7 @@ paises_africanos = {
 }
 
 
-frutas = ["maça",[22,]]
+frutas = ["maça",[]]
 
 
 def ln(x):
@@ -63,6 +63,11 @@ print("Programa para estudar listas")
 ln(45)
 
 
-for indice, pais in enumerate(paises_africanos): 
-    print(f"""País: {pais}\nCapital: {paises_africanos[pais]}""")
-    ln(30) 
+# for indice, pais in enumerate(paises_africanos): 
+#     print(f"""País: {pais}\nCapital: {paises_africanos[pais]}""")
+#     ln(30) 
+
+for i in range(3):
+    fruta = str(input("Digite uma fruta"))
+    frutas[1].append(fruta)
+print(frutas)
